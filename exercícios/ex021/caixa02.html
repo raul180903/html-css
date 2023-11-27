@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+        }
+        header {
+            width: 600px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 15px;
+        }
+        h1 {
+            color: black;
+            background-color: rgb(159, 159, 159);
+            border: 10px 10px 10px black;
+        }
+        nav {
+            background-color: rgb(159, 159, 159);
+            padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+        }
+        nav > a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+        main {
+            background-color: rgb(197, 197, 197);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.43);
+        }
+        article{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+
+        }
+        article > aside {
+            background-color: rgb(0, 102, 149);
+            color: white;
+        }
+        footer {
+            background-color: rgb(144, 144, 144);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+         footer > p {
+             margin: 0px;
+        }
+
+        div#bola {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        div#bola2 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: rgb(255, 179, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assusntos">
+            <p></p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias, officiis incidunt placeat odit at iusto excepturi temporibus labore eveniet. Minus beatae vel vero quod officiis quaerat at libero eaque.</p>
+                <aside>
+                    <p>Artigo escrito por Raul de Souza</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido em Curso em Vídeo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+    <div id="bola2">
+
+    </div>
+</body>
+</html>

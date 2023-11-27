@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <!--SELETORES PERSONALIZADOS
+        #  = id 
+        .  = class
+        :  = pseudo-classe
+        :: = pseudo-element
+        >  = children -->
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        a {
+            color: rgb(0, 255, 140);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* :visited = configuração site visitado */
+        a:visited {
+            color: rgb(0, 153, 255)
+        }
+
+        /* :hover = configuração do texto sublhinhado */
+        a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        
+        /* :active = configuração do link ativado */
+        a:active {
+            color: rgb(255, 0, 0);
+        }
+
+       /*-----------------------------------------------
+
+        pseudoclasse = uma vez dois pontos (:)
+          
+        pseudoelemento = duas vezes dois pontos (::)
+         
+        ----------------------------------------------*/
+
+
+        .especial {
+            background-color: rgba(0, 136, 255, 0.2);
+        }
+
+        /* ::before = antes de todos os links*/
+        .especial::before {
+            content: '⇨';
+            color: rgb(0, 58, 139);
+        }
+
+
+        /* ::after = depois de todos os links
+           content: = avisando q tem algo        
+        */
+        .especial::after{
+            content: '⇦	';
+            color: darkcyan;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/raul180903/https-rauldesouza1809.github" target="_blank" class="especial">Repositório GitHub</a></li>
+
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" class="especial">Vídeo do Canal</a></li>
+
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
