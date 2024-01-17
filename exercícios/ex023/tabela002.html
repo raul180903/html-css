@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        padding: 5px;
+    }
+
+    table {
+        width: 500px;
+        border-collapse:collapse;
+    }
+
+    th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        color: white;
+    }
+
+    .populacao {
+        text-align: right;
+    }
+
+    thead, tfoot {
+        background-color: rgb(35, 35, 35);
+        color: white;
+    }
+
+    #cidade1 {
+        background-color: rgb(211, 0, 238);
+        color: rgb(0, 0, 0);
+    }
+
+    #cidade2 {
+        background-color: rgb(166, 0, 237);
+        color: rgb(0, 0, 0);
+    }
+
+    #cidade3 {
+        background-color: rgb(97, 0, 233);
+        color: rgb(0, 0, 0);
+    }
+
+    #cidade4 {
+        background-color: rgb(0, 123, 255);
+        color: rgb(0, 0, 0);
+    }
+
+    #cidade5 {
+        background-color:rgb(0, 213, 255) ;
+        color: black;
+    }
+
+    #cidade6 {
+        background-color: rgb(0, 236, 177);
+        color: black;
+    }
+
+    #cidade7 {
+        background-color: rgb(0, 232, 89);
+        color: black;
+    }
+
+    #cidade8 {
+        background-color: rgb(0, 255, 51);
+        color: black;
+    }
+
+    #cidade9 {
+        background-color: rgb(219, 235, 0);
+        color: black;
+    }
+
+    #cidade10 {
+        background-color: rgb(255, 187, 0);
+        color: black;
+    }
+
+    #cidade11 {
+        background-color: rgb(255, 140, 0);
+        color: black;
+    }
+
+    #cidade12 {
+         background-color: rgb(255, 85, 0);
+         color: black;
+    }
+
+    #cidade13 {
+        background-color: rgb(255, 0, 0);
+        color: black;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+        TABLE 
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Populção</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="cidade1">
+                <td>São Paulo</td>
+                <td class="populacao">44 411 238</td>
+            </tr>
+            <tr id="cidade2">
+                <td>Minas Gerais</td>
+                <td class="populacao">20 538 718</td>
+            </tr>
+            <tr id="cidade3">
+                <td>Rio de Janeiro</td>
+                <td class="populacao">16 054 524</td>
+            </tr>
+            <tr id="cidade4">
+                <td>Bahia</td>
+                <td class="populacao">14 141 626</td>
+            </tr>
+            <tr id="cidade5">
+                <td>Paraná</td>
+                <td class="populacao">11 444 380</td>
+            </tr>
+            <tr id="cidade6">
+                <td>Rio Grande do Sul</td>
+                <td class="populacao">10 882 965</td>
+            </tr>
+            <tr id="cidade7">
+                <td>Pernambuco</td>
+                <td class="populacao">9 058 931</td>
+            </tr>
+            <tr id="cidade8">
+                <td>Ceará</td>
+                <td class="populacao">8 794 957</td>
+            </tr>
+            <tr id="cidade9">
+                <td>Pará</td>
+                <td class="populacao">8 121 025</td>
+            </tr>
+            <tr id="cidade10">
+                <td>Santa Catarina</td>
+                <td class="populacao">7 610 361</td>
+            </tr>
+            <tr id="cidade11">
+                <td>Goiás</td>
+                <td class="populacao">7 056 495	</td>
+            </tr>
+            <tr id="cidade12">
+                <td>Maranhão</td>
+                <td class="populacao">6 775 805</td>
+            </tr>
+            <tr id="cidade13">
+                <td>Paraíba</td>
+                <td class="populacao">3 974 687</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td>00000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
