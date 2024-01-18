@@ -26,89 +26,43 @@
     }
 
     td {
-        border: 1px solid black;
+        border: 1px solid rgb(44, 44, 44);
         padding: 10px;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     .populacao {
         text-align: right;
     }
 
-    thead, tfoot {
-        background-color: rgb(35, 35, 35);
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(117, 117, 117);
         color: white;
     }
 
-    #cidade1 {
-        background-color: rgb(211, 0, 238);
-        color: rgb(0, 0, 0);
+    thead, tfoot {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    
+    tbody > tr:nth-child(odd) {
+        background-color: rgb(0, 213, 255);
     }
 
-    #cidade2 {
-        background-color: rgb(166, 0, 237);
-        color: rgb(0, 0, 0);
+    tbody > tr:nth-child(even) {
+        background-color: rgb(251, 0, 255);
     }
 
-    #cidade3 {
-        background-color: rgb(97, 0, 233);
-        color: rgb(0, 0, 0);
-    }
-
-    #cidade4 {
-        background-color: rgb(0, 123, 255);
-        color: rgb(0, 0, 0);
-    }
-
-    #cidade5 {
-        background-color:rgb(0, 213, 255) ;
-        color: black;
-    }
-
-    #cidade6 {
-        background-color: rgb(0, 236, 177);
-        color: black;
-    }
-
-    #cidade7 {
-        background-color: rgb(0, 232, 89);
-        color: black;
-    }
-
-    #cidade8 {
-        background-color: rgb(0, 255, 51);
-        color: black;
-    }
-
-    #cidade9 {
-        background-color: rgb(219, 235, 0);
-        color: black;
-    }
-
-    #cidade10 {
-        background-color: rgb(255, 187, 0);
-        color: black;
-    }
-
-    #cidade11 {
-        background-color: rgb(255, 140, 0);
-        color: black;
-    }
-
-    #cidade12 {
-         background-color: rgb(255, 85, 0);
-         color: black;
-    }
-
-    #cidade13 {
-        background-color: rgb(255, 0, 0);
-        color: black;
-    }
+   
 </style>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
         TABLE 
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -117,72 +71,74 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populção</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
-            <tr id="cidade1">
+            <tr>
                 <td>São Paulo</td>
                 <td class="populacao">44 411 238</td>
             </tr>
-            <tr id="cidade2">
+            <tr>
                 <td>Minas Gerais</td>
                 <td class="populacao">20 538 718</td>
             </tr>
-            <tr id="cidade3">
+            <tr>
                 <td>Rio de Janeiro</td>
                 <td class="populacao">16 054 524</td>
             </tr>
-            <tr id="cidade4">
+            <tr>
                 <td>Bahia</td>
                 <td class="populacao">14 141 626</td>
             </tr>
-            <tr id="cidade5">
+            <tr>
                 <td>Paraná</td>
                 <td class="populacao">11 444 380</td>
             </tr>
-            <tr id="cidade6">
+            <tr>
                 <td>Rio Grande do Sul</td>
                 <td class="populacao">10 882 965</td>
             </tr>
-            <tr id="cidade7">
+            <tr>
                 <td>Pernambuco</td>
                 <td class="populacao">9 058 931</td>
             </tr>
-            <tr id="cidade8">
+            <tr>
                 <td>Ceará</td>
                 <td class="populacao">8 794 957</td>
             </tr>
-            <tr id="cidade9">
+            <tr>
                 <td>Pará</td>
                 <td class="populacao">8 121 025</td>
             </tr>
-            <tr id="cidade10">
+            <tr>
                 <td>Santa Catarina</td>
                 <td class="populacao">7 610 361</td>
             </tr>
-            <tr id="cidade11">
+            <tr>
                 <td>Goiás</td>
                 <td class="populacao">7 056 495	</td>
             </tr>
-            <tr id="cidade12">
+            <tr>
                 <td>Maranhão</td>
                 <td class="populacao">6 775 805</td>
             </tr>
-            <tr id="cidade13">
+            <tr>
                 <td>Paraíba</td>
                 <td class="populacao">3 974 687</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>00000</td>
             </tr>
         </tfoot>
+       
     </table>
 </body>
 </html>
