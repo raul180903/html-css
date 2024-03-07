@@ -9,7 +9,22 @@
         * {
             padding: 0px;
             margin: 5px;
-            background-color: ;
+            font-family: Arial, Helvetica, sans-serif;
+           
+
+        }
+
+        #dadospessoias {
+            background-color: rgb(12, 199, 12);
+
+        }
+
+        .idados  {
+            background-color: greenyellow;
+        }
+
+        .div1 > label, input {
+            background-color: rgb(12, 199, 12) ;
         }
 
         #nomesdificeis {
@@ -17,7 +32,7 @@
             color: white;
         }
 
-        .inome {
+        .inome { 
             background-color: black;
             color: white;
         }
@@ -31,37 +46,36 @@
             background-color: darkblue;
             color: white;
         }
+
+       
     </style>
 </head>
 <body>
     <h1>Exemplo de Fomulário</h1>
     <form action="cadastro.php" method="get">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <div>
-                <label for="inome">Nome Completo</label>
-                <input type="text" name="nome" id="inome" minlength="5" maxlength="30" required>
+        <fieldset id="dadospessoias">
+            <legend style="background-color: greenyellow;">Dados Pessoais</legend>
+            <div class="div1">
+                <label for="idados">Nome Completo</label>
+                <input type="text" name="idados" class="idados" minlength="5" maxlength="30" required>
             </div>
-            <div>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            <div class="div1">
+                <label for="idados">E-mail</label>
+                <input type="email" name="idados" class="idados" autocomplete="email" required>
             </div>
-            <div>
-                <label for="itele">Telefone</label>
-                <input type="tel" name="telefone" id="itele" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
+            <div class="div1">
+                <label for="idados">Telefone</label>
+                <input type="tel" name="idados" class="idados" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
+        </fieldset>
     
         <!--------ESTUDAR MAIS SOBRE RegEx-------->
 
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </div>
-        </fieldset>
+           <!--------------------------------------->
 
         <!---------NOMES DIFICEIS---------->
 
         <fieldset id="nomesdificeis">
-            <legend>Nomes Difíceis</legend>
+            <legend style="background-color: black;">Nomes Difíceis</legend>
             <div>
                 <label for="inome">Nome 1</label>
                 <input type="text" name="nome 1" class=" inome">
@@ -83,7 +97,7 @@
         <!----------NÚMEROS GRANDES------------>
 
         <fieldset id="numerosgrandes">
-            <legend>Números Grandes</legend>
+            <legend style="background-color: darkblue;">Números Grandes</legend>
             <div>
                 <label for="inumero">Número 1</label>
                 <input type="number" name="numero 1" class=" inumero">
@@ -101,6 +115,10 @@
                 <input type="number" name="number 4" class=" inumero">
             </div>
         </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
     </form>
 </body>
 </html>
