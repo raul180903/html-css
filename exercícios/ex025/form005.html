@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <!--TODO BOTÃO DE type"radio" PRECISA TER O MESMO "name" e "id diferente"-->
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label> <br>
+
+            <input type="radio" name="sexo" id="isxnao"> <label for="isxnao">Não definido</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+
+            <input type="checkbox" name="esten" id="iesten" checked> <label for="iesten">Tênis</label> <br>
+
+            <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Vôlei</label> <br>
+
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+
+            <input type="checkbox" name="esrug" id="iesrug"> <label for="iesrug">Rugby</label> <br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Cantores</legend>
+            <input type="radio" name="cantor" id="icanneyo"> <label for="icanneyo">Ne-yo</label> <br>
+
+            <input type="radio" name="cantor" id="icanchrisbronw"> <label for="icanchrisbronw">Chris Bronw</label> <br>
+
+            <input type="radio" name="cantor" id="icanusher"> <label for="icanusher">Usher</label> <br>
+
+            <input type="radio" name="cantor" id="icanakon"> <label for="icanakon">Akon</label> <br>
+
+            <input type="radio" name="cantor" id="icaneminem"> <label for="icaneminem">Eminem</label> <br>
+
+            <input type="radio" name="cantor" id="ican50cent"> <label for="ican50cent">50 cent</label> <br>
+
+            <input type="radio" name="cantor" id="icandrake"> <label for="icandrake">Drake</label> <br>
+
+            <input type="radio" name="cantor" id="icanomarion"> <label for="icanomarion">Omarion</label> <br>
+
+            <input type="radio" name="cantor" id="icanmario"> <label for="icanmario">Mario</label> <br>
+
+            <input type="radio" name="cantor" id="icanellamai"> <label for="icanellamai">Ella Mai</label> <br>
+             
+            <input type="radio" name="cantor" id="icanher"> <label for="icanher">H.E.R</label> <br>
+
+            <input type="radio" name="cantor" id="icanpostmalone"> <label for="icanpostmalone">Post Malone</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
