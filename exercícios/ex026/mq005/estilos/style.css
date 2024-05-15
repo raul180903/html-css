@@ -10,7 +10,7 @@
 }
 
 header {
-    background-color: rgb(14, 115, 165);
+    background-color: rgb(14, 77, 165);
 }
 
 header > h1 {
@@ -19,8 +19,22 @@ header > h1 {
     color: white;
 }
 
-menu {
+#burger {
+    background-color: rgb(0, 0, 75);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover {
+    background-color: white;
+    color: rgb(0, 0, 117);
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {
